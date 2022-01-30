@@ -1,13 +1,39 @@
 :root {
-  --primary-color: #15132c;
+  --primary-color: #0a0822;
   --secondary-color: #ffffff;
 }
 
 body {
-  background-image: linear-gradient(
-    var(--primary-color),
-    var(--secondary-color)
-  );
+  background-color: var(--primary-color);
+  font-family: "Readex Pro", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Indie Flower", cursive;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 48px;
+  margin: 50px;
+}
+h4 {
+  font-size: 56px;
+  margin-bottom: 50px;
+}
+
+p {
+  font-size: 20px;
 }
 
 header {
@@ -20,25 +46,89 @@ header {
   text-align: center;
 }
 
+footer {
+  display: block;
+  margin-top: 50px;
+  padding: 10px;
+  text-align: center;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  opacity: 0.6;
+}
+
+footer p {
+  font-size: 14px;
+}
+
 a.button-light {
   display: block;
   margin: 40px auto;
-  max-width: 200px;
+  max-width: 250px;
   text-align: center;
   text-decoration: none;
-  color: white;
+  color: var(--secondary-color);
   font-weight: 700;
   padding: 20px 30px;
   border: 1px white solid;
+  border-radius: 50px;
+  box-shadow: 0px 5px 10px;
+  opacity: 0.9;
+  transition: all 0.1s ease 0s;
+  cursor: pointer;
+}
+
+a.button-light:hover {
+  font-size: 20px;
+  color: #15132c;
+  background-image: none;
+  background-color: var(--secondary-color);
+  box-shadow: 0px 5px 10px;
+}
+
+a.button-dark {
+  display: block;
+  margin: 40px auto;
+  max-width: 250px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--secondary-color);
+  background-image: url("images/cosmic.gif");
+  background-repeat: repeat;
+  background-color: var(--primary-color);
+  font-weight: 700;
+  padding: 20px 30px;
+  border: 1px var(--primary-color) solid;
   border-radius: 50px;
   box-shadow: 0px 5px 10px;
   transition: all 0.1s ease 0s;
   cursor: pointer;
 }
 
-a.button-light:hover {
-  font-size: 18px;
-  color: var(--primary-color);
-  background-color: var(--secondary-color);
+a.button-dark:hover {
+  font-size: 20px;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
   box-shadow: 0px 5px 10px;
+}
+
+.dark-theme-container {
+  display: block;
+  margin: auto;
+  max-width: 1000px;
+  padding: 200px 40px;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.light-theme-container {
+  display: block;
+  margin: auto;
+  max-width: 1000px;
+  padding: 200px 40px;
+  border-radius: 20px;
+  background-color: var(--secondary-color);
+  background-clip: ;
+  opacity: 0.9;
+  text-align: center;
 }
