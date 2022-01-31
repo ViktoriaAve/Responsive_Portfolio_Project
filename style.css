@@ -1,18 +1,20 @@
 :root {
   --primary-color: #0a0822;
   --secondary-color: #ffffff;
+  --basic-font: "Readex Pro", sans-serif;
+  --accent-font: "Indie Flower", cursive;
 }
 
 body {
   background-color: var(--primary-color);
-  font-family: "Readex Pro", sans-serif;
+  font-family: var(--basic-font);
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Indie Flower", cursive;
+  font-family: var(--accent-font);
 }
 
 h1 {
@@ -34,6 +36,11 @@ h4 {
 
 p {
   font-size: 20px;
+}
+
+i {
+  font-size: 40px;
+  margin: 50px auto auto 0px;
 }
 
 header {
