@@ -6,8 +6,11 @@
 }
 
 body {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   font-family: var(--basic-font);
+}
+body.homepage {
+  background-color: var(--primary-color);
 }
 
 h1,
@@ -43,6 +46,12 @@ i {
   margin: 50px auto auto 0px;
 }
 
+.nav-icon {
+  font-size: 20px;
+  padding: 0px;
+  margin: 0px;
+}
+
 header {
   padding: 300px 20px;
   margin: 0px;
@@ -56,15 +65,20 @@ header {
 footer {
   display: block;
   margin-top: 50px;
-  padding: 10px;
+  padding: 40px auto;
   text-align: center;
   color: var(--secondary-color);
   background-color: var(--primary-color);
-  opacity: 0.6;
 }
 
 footer p {
   font-size: 14px;
+  margin: 0px;
+}
+
+.secondary-page-header {
+  padding: 100px;
+  text-align: center;
 }
 
 a.button-light {
@@ -138,4 +152,18 @@ a.button-dark:hover {
   background-clip: ;
   opacity: 0.9;
   text-align: center;
+}
+
+.notice {
+  display: block;
+  margin: 30px auto;
+  padding: 60px;
+  max-width: 600px;
+  text-align: center;
+}
+.notice i {
+  font-size: 60px;
+  color: var(--primary-color);
+  padding: 5px;
+  margin: 0;
 }
