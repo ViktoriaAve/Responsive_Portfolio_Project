@@ -172,3 +172,37 @@ a.button-dark:hover {
 .media-icons {
   color: var(--primary-color);
 }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 48px;
+  }
+  h3 {
+    font-size: 36px;
+    text-align: center;
+  }
+  h4 {
+    font-size: 48px;
+  }
+  p {
+    font-size: 18px;
+  }
+  .email-link {
+    font-size: 16px;
+  }
+  a.button-dark {
+    font-size: 16px;
+  }
+  a.button-dark:hover {
+    font-size: 17px;
+  }
+  a.button-light {
+    font-size: 16px;
+  }
+  a.button-light:hover {
+    font-size: 17px;
+  }
+}
